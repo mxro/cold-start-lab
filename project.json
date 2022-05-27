@@ -1,0 +1,45 @@
+{
+  "projectName": "cold-start-lab",
+  "packages": [
+    {
+      "packageName": "app-nextjs-bootstrap",
+      "templateReference": {
+        "templateName": "app-nextjs-bootstrap"
+      }
+    },
+    {
+      "packageName": "lambda-express",
+      "templateReference": {
+        "templateName": "lambda-express"
+      }
+    },
+    {
+      "packageName": "serverless-api",
+      "templateReference": {
+        "templateName": "serverless-api"
+      }
+    },
+    {
+      "packageName": "s3",
+      "templateReference": {
+        "templateName": "s3"
+      }
+    },
+    {
+      "packageName": "dynamodb",
+      "templateReference": {
+        "templateName": "dynamodb"
+      }
+    },
+    {
+      "packageName": "lambda-go-gin",
+      "templateReference": {
+        "templateName": "lambda-go-gin"
+      }
+    }
+  ],
+  "rootTemplateReference": {
+    "templateName": "yarn-pnp-monorepo"
+  },
+  "createdAt": "2022-05-27T21:18:43.992Z"
+}

@@ -1,0 +1,19 @@
+{
+  "$schema": "./schemas/package.schema.json",
+  "name": "app-nextjs-bootstrap",
+  "template": "app-nextjs-bootstrap",
+  "templateVersion": "0.1.38",
+  "configuration": {},
+  "deployments": [
+    {
+      "name": "prod",
+      "configuration": {
+        "defaultCacheDuration": 10,
+        "hostedZoneDomain": "mxro.de",
+        "websiteDomain": "cold-start-lab.mxro.de"
+      },
+      "awsUser": "awsUser",
+      "awsRegion": "us-west-2"
+    }
+  ]
+}

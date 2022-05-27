@@ -1,0 +1,20 @@
+{
+  "$schema": "./schemas/package.schema.json",
+  "name": "lambda-go-gin",
+  "template": "lambda-go-gin",
+  "templateVersion": "0.1.43",
+  "configuration": {},
+  "deployments": [
+    {
+      "name": "prod",
+      "configuration": {
+        "lambdaName": "cold-start-lab-go",
+        "apiDomain": "go-api.cold-start-lab.mxro.de",
+        "hostedZoneDomain": "mxro.de",
+        "cors": "https://cold-start-lab.mxro.de"
+      },
+      "awsUser": "awsUser",
+      "awsRegion": "us-west-2"
+    }
+  ]
+}

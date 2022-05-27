@@ -1,0 +1,18 @@
+{
+  "$schema": "./schemas/package.schema.json",
+  "name": "dynamodb",
+  "template": "dynamodb",
+  "templateVersion": "0.1.0",
+  "configuration": {},
+  "deployments": [
+    {
+      "name": "prod",
+      "configuration": {
+        "tableName": "cold-start-lab"
+      },
+      "awsUser": "awsUser",
+      "awsRegion": "us-west-2",
+      "tfStateKey": "dynamodb-prod-bc12d2289a5de3b2b7ef.tfstate"
+    }
+  ]
+}

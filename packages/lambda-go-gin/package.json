@@ -1,0 +1,24 @@
+{
+  "name": "lambda-go-gin",
+  "version": "0.1.0",
+  "scripts": {
+    "build": "GOOS=linux GIN_MODE=release go build -ldflags=\"-s -w\" -o distLambda/lambda",
+    "compile": "yarn build",
+    "deploy": "yarn build && template deploy \"$@\"",
+    "deploy-ts": "yarn build && yarn template-ts deploy \"$@\"",
+    "infra": "template infra \"$@\"",
+    "template": "template",
+    "template-ts": "ts-node scripts/template.ts",
+    "test-ci": "echo 'not implemented'",
+    "watch": "PORT=8084 CORS=http://localhost:3000 GOLDSTACK_DEPLOYMENT=local nodemon --watch ../../ --ext go --exec 'go build -o localDevelopment/server.exe && cd localDevelopment && server.exe'"
+  },
+  "devDependencies": {
+    "@goldstack/template-lambda-express": "0.3.112",
+    "@types/jest": "^27.5.1",
+    "@types/node": "^17.0.33",
+    "nodemon": "^2.0.15",
+    "ts-node": "^10.7.0"
+  },
+  "author": "",
+  "license": ""
+}
