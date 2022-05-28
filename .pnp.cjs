@@ -1196,10 +1196,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]\
       ]],\
       ["@goldstack/template-dynamodb", [\
-        ["npm:0.1.9", {\
-          "packageLocation": "./.yarn/cache/@goldstack-template-dynamodb-npm-0.1.9-72001bc21c-85a9b76f88.zip/node_modules/@goldstack/template-dynamodb/",\
+        ["npm:0.1.10", {\
+          "packageLocation": "./.yarn/cache/@goldstack-template-dynamodb-npm-0.1.10-282b4156f4-b1e09d2bc5.zip/node_modules/@goldstack/template-dynamodb/",\
           "packageDependencies": [\
-            ["@goldstack/template-dynamodb", "npm:0.1.9"],\
+            ["@goldstack/template-dynamodb", "npm:0.1.10"],\
             ["@aws-sdk/util-dynamodb", "npm:3.87.0"],\
             ["@goldstack/infra", "npm:0.3.36"],\
             ["@goldstack/infra-aws", "npm:0.3.44"],\
@@ -6783,7 +6783,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageDependencies": [\
             ["dynamodb", "workspace:packages/dynamodb"],\
             ["@aws-sdk/util-dynamodb", "npm:3.87.0"],\
-            ["@goldstack/template-dynamodb", "npm:0.1.9"],\
+            ["@goldstack/template-dynamodb", "npm:0.1.10"],\
             ["@types/jest", "npm:27.5.1"],\
             ["@types/node", "npm:17.0.33"],\
             ["aws-sdk", "npm:2.1055.0"],\
