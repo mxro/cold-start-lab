@@ -1223,10 +1223,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]\
       ]],\
       ["@goldstack/template-lambda-api", [\
-        ["npm:0.4.39", {\
-          "packageLocation": "./.yarn/cache/@goldstack-template-lambda-api-npm-0.4.39-1715693b70-46f2291328.zip/node_modules/@goldstack/template-lambda-api/",\
+        ["npm:0.4.41", {\
+          "packageLocation": "./.yarn/cache/@goldstack-template-lambda-api-npm-0.4.41-cd25d8f56b-d619aeca77.zip/node_modules/@goldstack/template-lambda-api/",\
           "packageDependencies": [\
-            ["@goldstack/template-lambda-api", "npm:0.4.39"],\
+            ["@goldstack/template-lambda-api", "npm:0.4.41"],\
             ["@goldstack/infra", "npm:0.3.36"],\
             ["@goldstack/infra-aws", "npm:0.3.44"],\
             ["@goldstack/utils-aws-lambda", "npm:0.1.28"],\
@@ -11373,7 +11373,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./packages/lambda-serverless-api/",\
           "packageDependencies": [\
             ["lambda-serverless-api", "workspace:packages/lambda-serverless-api"],\
-            ["@goldstack/template-lambda-api", "npm:0.4.39"],\
+            ["@goldstack/template-lambda-api", "npm:0.4.41"],\
             ["@goldstack/utils-aws-http-api-local", "npm:0.1.30"],\
             ["@jest-mock/express", "npm:1.4.5"],\
             ["@types/aws-lambda", "npm:8.10.88"],\

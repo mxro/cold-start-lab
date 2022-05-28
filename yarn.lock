@@ -768,9 +768,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@goldstack/template-lambda-api@npm:0.4.39":
-  version: 0.4.39
-  resolution: "@goldstack/template-lambda-api@npm:0.4.39"
+"@goldstack/template-lambda-api@npm:0.4.41":
+  version: 0.4.41
+  resolution: "@goldstack/template-lambda-api@npm:0.4.41"
   dependencies:
     "@goldstack/infra": 0.3.36
     "@goldstack/infra-aws": 0.3.44
@@ -794,7 +794,7 @@ __metadata:
   bin:
     template: ./bin/template
     template-lambda-express: ./bin/template
-  checksum: 46f2291328fd65547564d0b20a9a2ecab1708e0651f9025286419344757b6a1494c030d3306423e0d009fa73d0f8887b407563acd960a357b6761aab1ddf6028
+  checksum: d619aeca77a98b8ad104341fc8340a503ee7fc20c93a5be288e6524d4c89496a39ae350c2873386ded772393f2446182edd181a7d09f2854636298d215053aa9
   languageName: node
   linkType: hard
 
@@ -9656,7 +9656,7 @@ fsevents@~2.1.2:
   version: 0.0.0-use.local
   resolution: "lambda-serverless-api@workspace:packages/lambda-serverless-api"
   dependencies:
-    "@goldstack/template-lambda-api": 0.4.39
+    "@goldstack/template-lambda-api": 0.4.41
     "@goldstack/utils-aws-http-api-local": 0.1.30
     "@jest-mock/express": ^1.4.5
     "@types/aws-lambda": ^8.10.88
