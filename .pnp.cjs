@@ -47,6 +47,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
       {\
         "name": "serverless-api",\
         "reference": "workspace:packages/serverless-api"\
+      },\
+      {\
+        "name": "timings",\
+        "reference": "workspace:packages/timings"\
       }\
     ],\
     "enableTopLevelFallback": true,\
@@ -59,7 +63,8 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
       ["lambda-express", ["workspace:packages/lambda-express"]],\
       ["lambda-go-gin", ["workspace:packages/lambda-go-gin"]],\
       ["s3", ["workspace:packages/s3"]],\
-      ["serverless-api", ["workspace:packages/serverless-api"]]\
+      ["serverless-api", ["workspace:packages/serverless-api"]],\
+      ["timings", ["workspace:packages/timings"]]\
     ],\
     "fallbackPool": [\
     ],\
@@ -15144,6 +15149,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@types/node-fetch", "npm:2.5.12"],\
             ["@yarnpkg/esbuild-plugin-pnp", "virtual:e6118f2e88e3a29f2c712c9566ce1c8ca6770f76c2473c167fb7a8a05ed6826535f62fc9ba847429422d5edc582f6a7cca36a1d4576c006d0d27debded0812fe#npm:3.0.0-rc.1"],\
             ["date-fns", "npm:2.28.0"],\
+            ["dynamodb", "workspace:packages/dynamodb"],\
             ["esbuild", "npm:0.14.34"],\
             ["find-free-port", "npm:2.0.0"],\
             ["jest", "virtual:ff2d0a45afbd91a030f60d89a4fb143e85c20a8675c23c7fc89f59e4a065c9e9e8b3cd058cd5503b9d2372fd30ecb564eac95e40d49769d3987f614b75ec8ae8#npm:28.1.0"],\
@@ -15151,6 +15157,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["rimraf", "npm:3.0.2"],\
             ["source-map-support", "npm:0.5.21"],\
             ["supertest", "npm:4.0.2"],\
+            ["timings", "workspace:packages/timings"],\
             ["ts-jest", "virtual:e6118f2e88e3a29f2c712c9566ce1c8ca6770f76c2473c167fb7a8a05ed6826535f62fc9ba847429422d5edc582f6a7cca36a1d4576c006d0d27debded0812fe#npm:28.0.2"],\
             ["ts-node", "virtual:ff2d0a45afbd91a030f60d89a4fb143e85c20a8675c23c7fc89f59e4a065c9e9e8b3cd058cd5503b9d2372fd30ecb564eac95e40d49769d3987f614b75ec8ae8#npm:10.8.0"],\
             ["ts-node-dev", "virtual:e6118f2e88e3a29f2c712c9566ce1c8ca6770f76c2473c167fb7a8a05ed6826535f62fc9ba847429422d5edc582f6a7cca36a1d4576c006d0d27debded0812fe#npm:1.1.8"],\
@@ -16477,6 +16484,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["next-tick", "npm:1.1.0"]\
           ],\
           "linkType": "HARD"\
+        }]\
+      ]],\
+      ["timings", [\
+        ["workspace:packages/timings", {\
+          "packageLocation": "./packages/timings/",\
+          "packageDependencies": [\
+            ["timings", "workspace:packages/timings"]\
+          ],\
+          "linkType": "SOFT"\
         }]\
       ]],\
       ["tiny-emitter", [\

@@ -5660,7 +5660,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"dynamodb@workspace:packages/dynamodb":
+"dynamodb@workspace:^, dynamodb@workspace:packages/dynamodb":
   version: 0.0.0-use.local
   resolution: "dynamodb@workspace:packages/dynamodb"
   dependencies:
@@ -13113,6 +13113,7 @@ resolve@^1.20.0:
     "@types/node-fetch": 2
     "@yarnpkg/esbuild-plugin-pnp": ^3.0.0-rc.1
     date-fns: ^2.28.0
+    dynamodb: "workspace:^"
     esbuild: ^0.14.34
     find-free-port: ^2.0.0
     jest: ^28.1.0
@@ -13120,6 +13121,7 @@ resolve@^1.20.0:
     rimraf: ^3.0.2
     source-map-support: ^0.5.21
     supertest: ^4.0.2
+    timings: "workspace:^"
     ts-jest: ^28.0.2
     ts-node: ^10.8.0
     ts-node-dev: ^1.1.8
@@ -14317,6 +14319,12 @@ resolve@^1.20.0:
   checksum: ef3f27a0702a88d885bcbb0317c3e3ecd094ce644da52e7f7d362394a125d9e3578292a8f8966071a980d8abbc3395725333b1856f3ae93835b46589f700d938
   languageName: node
   linkType: hard
+
+"timings@workspace:^, timings@workspace:packages/timings":
+  version: 0.0.0-use.local
+  resolution: "timings@workspace:packages/timings"
+  languageName: unknown
+  linkType: soft
 
 "tiny-emitter@npm:^2.0.0":
   version: 2.1.0

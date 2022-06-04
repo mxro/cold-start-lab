@@ -11,7 +11,8 @@
         "bucketName": "cold-start-lab-bucket"
       },
       "awsUser": "awsUser",
-      "awsRegion": "us-west-2"
+      "awsRegion": "us-west-2",
+      "tfStateKey": "s3-prod-f2c16df5d980930a62b0.tfstate"
     }
   ]
 }

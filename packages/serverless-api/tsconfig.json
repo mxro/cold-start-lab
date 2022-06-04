@@ -10,5 +10,9 @@
     "outDir": "dist",
     "baseUrl": "."
   },
-  "references": []
+  "references": [
+    {
+      "path": "../dynamodb"
+    }
+  ]
 }
