@@ -1,0 +1,21 @@
+{
+  "$schema": "./schemas/package.schema.json",
+  "name": "serverless-api",
+  "template": "serverless-api",
+  "templateVersion": "0.1.20",
+  "configuration": {},
+  "deployments": [
+    {
+      "name": "prod",
+      "configuration": {
+        "lambdas": {},
+        "lambdaNamePrefix": "cold-start-lab",
+        "apiDomain": "serverless-api.cold-start-lab.mxro.de",
+        "hostedZoneDomain": "cold-start-lab.mxro.de",
+        "cors": "https://cold-start-lab.mxro.de"
+      },
+      "awsUser": "awsUser",
+      "awsRegion": "us-west-2"
+    }
+  ]
+}

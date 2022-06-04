@@ -1,0 +1,18 @@
+{
+  "$schema": "./schemas/package.schema.json",
+  "name": "email-send",
+  "template": "email-send",
+  "templateVersion": "0.1.59",
+  "configuration": {},
+  "deployments": [
+    {
+      "name": "prod",
+      "configuration": {
+        "domain": "cold-start-lab.mxro.de",
+        "hostedZoneDomain": "cold-start-lab.mxro.de"
+      },
+      "awsUser": "awsUser",
+      "awsRegion": "us-west-2"
+    }
+  ]
+}

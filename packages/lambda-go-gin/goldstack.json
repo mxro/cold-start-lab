@@ -2,15 +2,15 @@
   "$schema": "./schemas/package.schema.json",
   "name": "lambda-go-gin",
   "template": "lambda-go-gin",
-  "templateVersion": "0.1.43",
+  "templateVersion": "0.1.45",
   "configuration": {},
   "deployments": [
     {
       "name": "prod",
       "configuration": {
-        "lambdaName": "cold-start-lab-go",
+        "lambdaName": "cold-start-lab-go-gin",
         "apiDomain": "go-api.cold-start-lab.mxro.de",
-        "hostedZoneDomain": "mxro.de",
+        "hostedZoneDomain": "cold-start-lab.mxro.de",
         "cors": "https://cold-start-lab.mxro.de"
       },
       "awsUser": "awsUser",

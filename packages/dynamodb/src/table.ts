@@ -24,13 +24,11 @@ export const connect = async (deploymentName?: string): Promise<DynamoDB> => {
 };
 
 export const connectTable = async <Name extends string>(
-  deploymentName?: string,
-  client?: DynamoDB.DocumentClient
+  deploymentName?: string
 ): Promise<Table<Name, 'pk', 'sk'>> => {
   const tableName = await getTableName(deploymentName);
   return createTable(
-    client ||
-      new DynamoDB.DocumentClient({ service: await connect(deploymentName) }),
+    new DynamoDB.DocumentClient({ service: await connect(deploymentName) }),
     tableName
   );
 };

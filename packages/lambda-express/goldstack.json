@@ -2,7 +2,7 @@
   "$schema": "./schemas/package.schema.json",
   "name": "lambda-express",
   "template": "lambda-express",
-  "templateVersion": "0.1.68",
+  "templateVersion": "0.1.70",
   "configuration": {},
   "deployments": [
     {
@@ -10,7 +10,7 @@
       "configuration": {
         "lambdaName": "cold-start-lab-express",
         "apiDomain": "express-api.cold-start-lab.mxro.de",
-        "hostedZoneDomain": "mxro.de",
+        "hostedZoneDomain": "cold-start-lab.mxro.de",
         "cors": "https://cold-start-lab.mxro.de"
       },
       "awsUser": "awsUser",

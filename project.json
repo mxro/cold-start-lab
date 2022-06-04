@@ -32,6 +32,12 @@
       }
     },
     {
+      "packageName": "email-send",
+      "templateReference": {
+        "templateName": "email-send"
+      }
+    },
+    {
       "packageName": "lambda-go-gin",
       "templateReference": {
         "templateName": "lambda-go-gin"
@@ -41,5 +47,5 @@
   "rootTemplateReference": {
     "templateName": "yarn-pnp-monorepo"
   },
-  "createdAt": "2022-05-27T21:18:43.992Z"
+  "createdAt": "2022-06-04T21:02:37.731Z"
 }

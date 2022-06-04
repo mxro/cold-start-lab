@@ -1,6 +1,6 @@
 {
   "$schema": "./schemas/package.schema.json",
-  "templateVersion": "0.1.69",
+  "templateVersion": "0.1.71",
   "template": "yarn-pnp-monorepo",
   "name": "",
   "configuration": {},

@@ -104,4 +104,3 @@ When running the `compile-watch` command in the root, you may get the following 
     (node:97874) MaxListenersExceededWarning: Possible EventEmitter memory leak detected. 11 SIGINT listeners added to [process]. Use emitter.setMaxListeners() to increase limit
 
 This is nothing to worry about. It is caused by the command spawning a lot of sub-processes, since an individual `nodemon` process is started for every package that is watched (see also [this question](https://stackoverflow.com/questions/9768444/possible-eventemitter-memory-leak-detected) on Stackoverflow).
-# cold-start-lab

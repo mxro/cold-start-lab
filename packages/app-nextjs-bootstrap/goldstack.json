@@ -2,14 +2,14 @@
   "$schema": "./schemas/package.schema.json",
   "name": "app-nextjs-bootstrap",
   "template": "app-nextjs-bootstrap",
-  "templateVersion": "0.1.38",
+  "templateVersion": "0.1.40",
   "configuration": {},
   "deployments": [
     {
       "name": "prod",
       "configuration": {
         "defaultCacheDuration": 10,
-        "hostedZoneDomain": "mxro.de",
+        "hostedZoneDomain": "cold-start-lab.mxro.de",
         "websiteDomain": "cold-start-lab.mxro.de"
       },
       "awsUser": "awsUser",

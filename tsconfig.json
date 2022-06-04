@@ -36,6 +36,9 @@
       "path": "packages/dynamodb"
     },
     {
+      "path": "packages/email-send"
+    },
+    {
       "path": "packages/lambda-express"
     },
     {

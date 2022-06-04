@@ -2,14 +2,15 @@ import { Table, Entity } from 'dynamodb-toolbox';
 import DynamoDB from 'aws-sdk/clients/dynamodb';
 
 export type User = {
-  email: string;
+  pk: string;
+  sk: string;
   name: string;
-  registered: string;
+  emailVerified: boolean;
 };
 
 export type UserKey = {
-  email: string;
-  registered: string;
+  pk: string;
+  sk: string;
 };
 
 export function createTable<Name extends string>(
@@ -30,13 +31,10 @@ export function UserEntity<Name extends string>(
   const e = new Entity<User, UserKey, typeof table>({
     name: 'User',
     attributes: {
-      email: {
-        partitionKey: true,
-      },
-      registered: {
-        sortKey: true,
-      },
-      name: 'string',
+      pk: { partitionKey: true },
+      sk: { hidden: true, sortKey: true },
+      name: { type: 'string', required: true },
+      emailVerified: { type: 'boolean', required: true },
     },
     table,
   } as const);
