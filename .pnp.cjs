@@ -15150,11 +15150,13 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@yarnpkg/esbuild-plugin-pnp", "virtual:e6118f2e88e3a29f2c712c9566ce1c8ca6770f76c2473c167fb7a8a05ed6826535f62fc9ba847429422d5edc582f6a7cca36a1d4576c006d0d27debded0812fe#npm:3.0.0-rc.1"],\
             ["date-fns", "npm:2.28.0"],\
             ["dynamodb", "workspace:packages/dynamodb"],\
+            ["email-send", "workspace:packages/email-send"],\
             ["esbuild", "npm:0.14.34"],\
             ["find-free-port", "npm:2.0.0"],\
             ["jest", "virtual:ff2d0a45afbd91a030f60d89a4fb143e85c20a8675c23c7fc89f59e4a065c9e9e8b3cd058cd5503b9d2372fd30ecb564eac95e40d49769d3987f614b75ec8ae8#npm:28.1.0"],\
             ["node-fetch", "virtual:7564ddb11bb6d952d3fc1582e8a722b60cc03bc7c8522c560e4a7efa1b43f04fed0343877d173cf9023ceffb708e50c855e09ee942c46a670d84d0a98d5bd07c#npm:2.6.7"],\
             ["rimraf", "npm:3.0.2"],\
+            ["s3", "workspace:packages/s3"],\
             ["source-map-support", "npm:0.5.21"],\
             ["supertest", "npm:4.0.2"],\
             ["timings", "workspace:packages/timings"],\

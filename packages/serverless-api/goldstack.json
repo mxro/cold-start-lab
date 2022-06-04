@@ -8,14 +8,32 @@
     {
       "name": "prod",
       "configuration": {
-        "lambdas": {},
+        "lambdas": {
+          "ANY /dynamodb": {
+            "function_name": "cold-start-lab-dynamodb",
+            "route": "ANY /dynamodb"
+          },
+          "ANY /email": {
+            "function_name": "cold-start-lab-email",
+            "route": "ANY /email"
+          },
+          "ANY /s3": {
+            "function_name": "cold-start-lab-s3",
+            "route": "ANY /s3"
+          },
+          "ANY /simple": {
+            "function_name": "cold-start-lab-simple",
+            "route": "ANY /simple"
+          }
+        },
         "lambdaNamePrefix": "cold-start-lab",
         "apiDomain": "serverless-api.cold-start-lab.mxro.de",
         "hostedZoneDomain": "cold-start-lab.mxro.de",
         "cors": "https://cold-start-lab.mxro.de"
       },
       "awsUser": "awsUser",
-      "awsRegion": "us-west-2"
+      "awsRegion": "us-west-2",
+      "tfStateKey": "serverless-api-prod-229b502f6c56690ca383.tfstate"
     }
   ]
 }

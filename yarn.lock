@@ -5726,7 +5726,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"email-send@workspace:packages/email-send":
+"email-send@workspace:^, email-send@workspace:packages/email-send":
   version: 0.0.0-use.local
   resolution: "email-send@workspace:packages/email-send"
   dependencies:
@@ -12852,7 +12852,7 @@ resolve@^1.20.0:
   languageName: node
   linkType: hard
 
-"s3@workspace:packages/s3":
+"s3@workspace:^, s3@workspace:packages/s3":
   version: 0.0.0-use.local
   resolution: "s3@workspace:packages/s3"
   dependencies:
@@ -13114,11 +13114,13 @@ resolve@^1.20.0:
     "@yarnpkg/esbuild-plugin-pnp": ^3.0.0-rc.1
     date-fns: ^2.28.0
     dynamodb: "workspace:^"
+    email-send: "workspace:^"
     esbuild: ^0.14.34
     find-free-port: ^2.0.0
     jest: ^28.1.0
     node-fetch: 2.6.7
     rimraf: ^3.0.2
+    s3: "workspace:^"
     source-map-support: ^0.5.21
     supertest: ^4.0.2
     timings: "workspace:^"

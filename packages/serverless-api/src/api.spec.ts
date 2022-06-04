@@ -5,6 +5,8 @@ import {
   StartServerResult,
 } from '@goldstack/utils-aws-http-api-local';
 
+jest.setTimeout(120000);
+
 describe('Should create API', () => {
   let port: undefined | number = undefined;
   let server: undefined | StartServerResult = undefined;
@@ -28,7 +30,12 @@ describe('Should create API', () => {
     });
   });
 
-  test('Should receive response and support parameters', async () => {});
+  test('Should receive response and support parameters', async () => {
+    const res = await fetch(`http://localhost:${port}/dynamodb`);
+    const response = await res.json();
+    expect(response.message).toContain('Dummy User');
+    expect(response.timings).toBeDefined();
+  });
 
   afterAll(async () => {
     if (server) {
