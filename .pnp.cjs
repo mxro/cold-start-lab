@@ -15163,6 +15163,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["serverless-api", "workspace:packages/serverless-api"],\
             ["@goldstack/template-lambda-api-cli", "npm:0.4.10"],\
             ["@goldstack/utils-aws-http-api-local", "npm:0.1.32"],\
+            ["@goldstack/utils-esbuild", "npm:0.4.2"],\
             ["@jest-mock/express", "npm:1.4.5"],\
             ["@types/aws-lambda", "npm:8.10.88"],\
             ["@types/aws-serverless-express", "npm:3.3.3"],\
