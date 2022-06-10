@@ -1,1 +1,17 @@
-[]
+[
+  {
+    "name": "prod",
+    "terraform": {
+      "table_arn": {
+        "sensitive": false,
+        "type": "string",
+        "value": "arn:aws:dynamodb:us-west-2:137100919967:table/cold-start-lab"
+      },
+      "table_name": {
+        "sensitive": false,
+        "type": "string",
+        "value": "cold-start-lab"
+      }
+    }
+  }
+]

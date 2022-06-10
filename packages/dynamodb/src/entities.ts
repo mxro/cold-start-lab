@@ -4,8 +4,6 @@ import DynamoDB from 'aws-sdk/clients/dynamodb';
 export type User = {
   pk: string;
   sk: string;
-  name: string;
-  emailVerified: boolean;
 };
 
 export type UserKey = {
@@ -32,9 +30,7 @@ export function UserEntity<Name extends string>(
     name: 'User',
     attributes: {
       pk: { partitionKey: true },
-      sk: { hidden: true, sortKey: true },
-      name: { type: 'string', required: true },
-      emailVerified: { type: 'boolean', required: true },
+      sk: { sortKey: true },
     },
     table,
   } as const);

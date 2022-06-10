@@ -47,6 +47,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
       {\
         "name": "serverless-api",\
         "reference": "workspace:packages/serverless-api"\
+      },\
+      {\
+        "name": "timings",\
+        "reference": "workspace:packages/timings"\
       }\
     ],\
     "enableTopLevelFallback": true,\
@@ -59,7 +63,8 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
       ["lambda-express", ["workspace:packages/lambda-express"]],\
       ["lambda-go-gin", ["workspace:packages/lambda-go-gin"]],\
       ["s3", ["workspace:packages/s3"]],\
-      ["serverless-api", ["workspace:packages/serverless-api"]]\
+      ["serverless-api", ["workspace:packages/serverless-api"]],\
+      ["timings", ["workspace:packages/timings"]]\
     ],\
     "fallbackPool": [\
     ],\
@@ -1275,14 +1280,14 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]\
       ]],\
       ["@goldstack/template-lambda-api-cli", [\
-        ["npm:0.4.9", {\
-          "packageLocation": "./.yarn/cache/@goldstack-template-lambda-api-cli-npm-0.4.9-a92cccb2e0-5dfd4c2a7a.zip/node_modules/@goldstack/template-lambda-api-cli/",\
+        ["npm:0.4.10", {\
+          "packageLocation": "./.yarn/cache/@goldstack-template-lambda-api-cli-npm-0.4.10-6bd60b9f82-effb84c5e1.zip/node_modules/@goldstack/template-lambda-api-cli/",\
           "packageDependencies": [\
-            ["@goldstack/template-lambda-api-cli", "npm:0.4.9"],\
+            ["@goldstack/template-lambda-api-cli", "npm:0.4.10"],\
             ["@goldstack/infra", "npm:0.3.37"],\
             ["@goldstack/infra-aws", "npm:0.3.46"],\
             ["@goldstack/template-lambda-api", "npm:0.4.45"],\
-            ["@goldstack/utils-aws-lambda", "npm:0.1.30"],\
+            ["@goldstack/utils-aws-lambda", "npm:0.1.31"],\
             ["@goldstack/utils-cli", "npm:0.2.14"],\
             ["@goldstack/utils-config", "npm:0.3.34"],\
             ["@goldstack/utils-docker", "npm:0.3.39"],\
@@ -1454,6 +1459,17 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/cache/@goldstack-utils-aws-lambda-npm-0.1.30-8e3306f5f8-4e24367e72.zip/node_modules/@goldstack/utils-aws-lambda/",\
           "packageDependencies": [\
             ["@goldstack/utils-aws-lambda", "npm:0.1.30"],\
+            ["@goldstack/utils-aws-cli", "npm:0.3.56"],\
+            ["@goldstack/utils-log", "npm:0.2.15"],\
+            ["@goldstack/utils-sh", "npm:0.4.32"],\
+            ["aws-sdk", "npm:2.1055.0"]\
+          ],\
+          "linkType": "HARD"\
+        }],\
+        ["npm:0.1.31", {\
+          "packageLocation": "./.yarn/cache/@goldstack-utils-aws-lambda-npm-0.1.31-aee0265acf-8befaa6f7a.zip/node_modules/@goldstack/utils-aws-lambda/",\
+          "packageDependencies": [\
+            ["@goldstack/utils-aws-lambda", "npm:0.1.31"],\
             ["@goldstack/utils-aws-cli", "npm:0.3.56"],\
             ["@goldstack/utils-log", "npm:0.2.15"],\
             ["@goldstack/utils-sh", "npm:0.4.32"],\
@@ -15145,7 +15161,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./packages/serverless-api/",\
           "packageDependencies": [\
             ["serverless-api", "workspace:packages/serverless-api"],\
-            ["@goldstack/template-lambda-api-cli", "npm:0.4.9"],\
+            ["@goldstack/template-lambda-api-cli", "npm:0.4.10"],\
             ["@goldstack/utils-aws-http-api-local", "npm:0.1.32"],\
             ["@jest-mock/express", "npm:1.4.5"],\
             ["@types/aws-lambda", "npm:8.10.88"],\
@@ -15155,13 +15171,17 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@types/node-fetch", "npm:2.5.12"],\
             ["@yarnpkg/esbuild-plugin-pnp", "virtual:e6118f2e88e3a29f2c712c9566ce1c8ca6770f76c2473c167fb7a8a05ed6826535f62fc9ba847429422d5edc582f6a7cca36a1d4576c006d0d27debded0812fe#npm:3.0.0-rc.1"],\
             ["date-fns", "npm:2.28.0"],\
+            ["dynamodb", "workspace:packages/dynamodb"],\
+            ["email-send", "workspace:packages/email-send"],\
             ["esbuild", "npm:0.14.34"],\
             ["find-free-port", "npm:2.0.0"],\
             ["jest", "virtual:ff2d0a45afbd91a030f60d89a4fb143e85c20a8675c23c7fc89f59e4a065c9e9e8b3cd058cd5503b9d2372fd30ecb564eac95e40d49769d3987f614b75ec8ae8#npm:28.1.0"],\
             ["node-fetch", "virtual:7564ddb11bb6d952d3fc1582e8a722b60cc03bc7c8522c560e4a7efa1b43f04fed0343877d173cf9023ceffb708e50c855e09ee942c46a670d84d0a98d5bd07c#npm:2.6.7"],\
             ["rimraf", "npm:3.0.2"],\
+            ["s3", "workspace:packages/s3"],\
             ["source-map-support", "npm:0.5.21"],\
             ["supertest", "npm:4.0.2"],\
+            ["timings", "workspace:packages/timings"],\
             ["ts-jest", "virtual:e6118f2e88e3a29f2c712c9566ce1c8ca6770f76c2473c167fb7a8a05ed6826535f62fc9ba847429422d5edc582f6a7cca36a1d4576c006d0d27debded0812fe#npm:28.0.2"],\
             ["ts-node", "virtual:ff2d0a45afbd91a030f60d89a4fb143e85c20a8675c23c7fc89f59e4a065c9e9e8b3cd058cd5503b9d2372fd30ecb564eac95e40d49769d3987f614b75ec8ae8#npm:10.8.0"],\
             ["ts-node-dev", "virtual:e6118f2e88e3a29f2c712c9566ce1c8ca6770f76c2473c167fb7a8a05ed6826535f62fc9ba847429422d5edc582f6a7cca36a1d4576c006d0d27debded0812fe#npm:1.1.8"],\
@@ -16488,6 +16508,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["next-tick", "npm:1.1.0"]\
           ],\
           "linkType": "HARD"\
+        }]\
+      ]],\
+      ["timings", [\
+        ["workspace:packages/timings", {\
+          "packageLocation": "./packages/timings/",\
+          "packageDependencies": [\
+            ["timings", "workspace:packages/timings"]\
+          ],\
+          "linkType": "SOFT"\
         }]\
       ]],\
       ["tiny-emitter", [\

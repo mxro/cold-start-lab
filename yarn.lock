@@ -811,14 +811,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@goldstack/template-lambda-api-cli@npm:0.4.9":
-  version: 0.4.9
-  resolution: "@goldstack/template-lambda-api-cli@npm:0.4.9"
+"@goldstack/template-lambda-api-cli@npm:0.4.10":
+  version: 0.4.10
+  resolution: "@goldstack/template-lambda-api-cli@npm:0.4.10"
   dependencies:
     "@goldstack/infra": 0.3.37
     "@goldstack/infra-aws": 0.3.46
     "@goldstack/template-lambda-api": 0.4.45
-    "@goldstack/utils-aws-lambda": 0.1.30
+    "@goldstack/utils-aws-lambda": 0.1.31
     "@goldstack/utils-cli": 0.2.14
     "@goldstack/utils-config": 0.3.34
     "@goldstack/utils-docker": 0.3.39
@@ -838,7 +838,7 @@ __metadata:
   bin:
     template: ./bin/template
     template-lambda-api: ./bin/template
-  checksum: 5dfd4c2a7a3825fb00d48d98eadea7453f4a17d41c8fa100dc8754c3306726ba4740b8d13c9c50f674213b97a27c0a339171c6e062dbf36f725a776cda76d1e5
+  checksum: effb84c5e1c04565eea38f8d659e7b9b35d4c9d1da5e4d842e8fc9aca27439fa1c6c994f62a5b3296ff7e9590c7418c8f4d733e25d3e67312f3c0d22d2e3f582
   languageName: node
   linkType: hard
 
@@ -1015,6 +1015,18 @@ __metadata:
     "@goldstack/utils-sh": 0.4.32
     aws-sdk: 2.1055.0
   checksum: 4e24367e729939dbbccc477d8d51417ccd50adf094925f10ae7b3e6ed502377c90d0439c8770220b82449f01bc9cb761342243e505db4654ec44ff7723f41ffc
+  languageName: node
+  linkType: hard
+
+"@goldstack/utils-aws-lambda@npm:0.1.31":
+  version: 0.1.31
+  resolution: "@goldstack/utils-aws-lambda@npm:0.1.31"
+  dependencies:
+    "@goldstack/utils-aws-cli": 0.3.56
+    "@goldstack/utils-log": 0.2.15
+    "@goldstack/utils-sh": 0.4.32
+    aws-sdk: 2.1055.0
+  checksum: 8befaa6f7aa62cfd654f1effe2c9b841fd627fedbaa0dc555a3bcea792eba982ce0516e8ca8c4defc064ff34a11041564892bf791c267f55bb13963b5eac4607
   languageName: node
   linkType: hard
 
@@ -5674,7 +5686,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"dynamodb@workspace:packages/dynamodb":
+"dynamodb@workspace:^, dynamodb@workspace:packages/dynamodb":
   version: 0.0.0-use.local
   resolution: "dynamodb@workspace:packages/dynamodb"
   dependencies:
@@ -5741,7 +5753,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"email-send@workspace:packages/email-send":
+"email-send@workspace:^, email-send@workspace:packages/email-send":
   version: 0.0.0-use.local
   resolution: "email-send@workspace:packages/email-send"
   dependencies:
@@ -12867,7 +12879,7 @@ resolve@^1.20.0:
   languageName: node
   linkType: hard
 
-"s3@workspace:packages/s3":
+"s3@workspace:^, s3@workspace:packages/s3":
   version: 0.0.0-use.local
   resolution: "s3@workspace:packages/s3"
   dependencies:
@@ -13118,7 +13130,7 @@ resolve@^1.20.0:
   version: 0.0.0-use.local
   resolution: "serverless-api@workspace:packages/serverless-api"
   dependencies:
-    "@goldstack/template-lambda-api-cli": 0.4.9
+    "@goldstack/template-lambda-api-cli": 0.4.10
     "@goldstack/utils-aws-http-api-local": 0.1.32
     "@jest-mock/express": ^1.4.5
     "@types/aws-lambda": ^8.10.88
@@ -13128,13 +13140,17 @@ resolve@^1.20.0:
     "@types/node-fetch": 2
     "@yarnpkg/esbuild-plugin-pnp": ^3.0.0-rc.1
     date-fns: ^2.28.0
+    dynamodb: "workspace:^"
+    email-send: "workspace:^"
     esbuild: ^0.14.34
     find-free-port: ^2.0.0
     jest: ^28.1.0
     node-fetch: 2.6.7
     rimraf: ^3.0.2
+    s3: "workspace:^"
     source-map-support: ^0.5.21
     supertest: ^4.0.2
+    timings: "workspace:^"
     ts-jest: ^28.0.2
     ts-node: ^10.8.0
     ts-node-dev: ^1.1.8
@@ -14332,6 +14348,12 @@ resolve@^1.20.0:
   checksum: ef3f27a0702a88d885bcbb0317c3e3ecd094ce644da52e7f7d362394a125d9e3578292a8f8966071a980d8abbc3395725333b1856f3ae93835b46589f700d938
   languageName: node
   linkType: hard
+
+"timings@workspace:^, timings@workspace:packages/timings":
+  version: 0.0.0-use.local
+  resolution: "timings@workspace:packages/timings"
+  languageName: unknown
+  linkType: soft
 
 "tiny-emitter@npm:^2.0.0":
   version: 2.1.0

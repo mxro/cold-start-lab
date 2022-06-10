@@ -3,34 +3,25 @@ import { DynamoDBContext } from '@goldstack/template-dynamodb';
 
 import { marshall } from '@aws-sdk/util-dynamodb';
 
+import { connectTable } from './table';
+import { User, UserEntity } from './entities';
+
 /**
  * Umzug migrations applied during connection see https://github.com/sequelize/umzug#migrations
  */
 export const createMigrations = (): InputMigrations<DynamoDBContext> => {
   return [
     {
-      name: '00-dummy-migration',
-      async up({ context }) {
-        await context.client
-          .putItem({
-            TableName: context.tableName,
-            Item: marshall({
-              pk: '#DUMMY',
-              sk: 'hello-world',
-            }),
-          })
-          .promise();
-      },
-      async down({ context }) {
-        await context.client
-          .deleteItem({
-            TableName: context.tableName,
-            Key: marshall({
-              pk: '#DUMMY',
-              sk: 'hello-world',
-            }),
-          })
-          .promise();
+      name: 'create-dummy-user',
+      up: async (context) => {
+        const table = await connectTable({
+          client: context.context.client,
+        });
+        const Users = UserEntity(table);
+        await Users.put({
+          pk: 'dummy-user@dummy.com',
+          sk: 'Dummy User',
+        });
       },
     },
   ];

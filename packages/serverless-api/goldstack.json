@@ -8,13 +8,31 @@
     {
       "name": "prod",
       "configuration": {
-        "lambdas": {},
+        "lambdas": {
+          "default": {
+            "function_name": "__default",
+            "route": "$default"
+          },
+          "ANY /dynamodb": {
+            "function_name": "dynamodb",
+            "route": "ANY /dynamodb"
+          },
+          "ANY /hello": {
+            "function_name": "hello",
+            "route": "ANY /hello"
+          },
+          "ANY /s3": {
+            "function_name": "s3",
+            "route": "ANY /s3"
+          }
+        },
         "apiDomain": "api.cold-start-lab.mxro.de",
         "hostedZoneDomain": "cold-start-lab.mxro.de",
         "cors": "https://cold-start-lab.mxro.de"
       },
       "awsUser": "awsUser",
-      "awsRegion": "us-west-2"
+      "awsRegion": "us-west-2",
+      "tfStateKey": "serverless-api-prod-ab29b2a4aba4f92dc69b.tfstate"
     }
   ]
 }

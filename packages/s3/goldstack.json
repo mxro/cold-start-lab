@@ -8,10 +8,11 @@
     {
       "name": "prod",
       "configuration": {
-        "bucketName": "cold-start-lab-bucket"
+        "bucketName": "cold-start-lab-test-bucket"
       },
       "awsUser": "awsUser",
-      "awsRegion": "us-west-2"
+      "awsRegion": "us-west-2",
+      "tfStateKey": "s3-prod-e9425e688a9252dc62c7.tfstate"
     }
   ]
 }

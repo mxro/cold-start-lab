@@ -11,7 +11,8 @@
         "tableName": "cold-start-lab"
       },
       "awsUser": "awsUser",
-      "awsRegion": "us-west-2"
+      "awsRegion": "us-west-2",
+      "tfStateKey": "dynamodb-prod-78f6f0d069c4c89a146e.tfstate"
     }
   ]
 }

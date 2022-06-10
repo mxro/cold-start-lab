@@ -1,1 +1,27 @@
-[]
+[
+  {
+    "name": "prod",
+    "terraform": {
+      "gateway_url": {
+        "sensitive": false,
+        "type": "string",
+        "value": "https://504dixxgl5.execute-api.us-west-2.amazonaws.com/prod"
+      },
+      "lambda_arn": {
+        "sensitive": false,
+        "type": "string",
+        "value": "arn:aws:lambda:us-west-2:137100919967:function:cold-start-lab-go"
+      },
+      "lambda_function_name": {
+        "sensitive": false,
+        "type": "string",
+        "value": "cold-start-lab-go"
+      },
+      "lambda_invoke_arn": {
+        "sensitive": false,
+        "type": "string",
+        "value": "arn:aws:apigateway:us-west-2:lambda:path/2015-03-31/functions/arn:aws:lambda:us-west-2:137100919967:function:cold-start-lab-go/invocations"
+      }
+    }
+  }
+]

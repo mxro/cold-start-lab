@@ -14,7 +14,8 @@
         "cors": "https://cold-start-lab.mxro.de"
       },
       "awsUser": "awsUser",
-      "awsRegion": "us-west-2"
+      "awsRegion": "us-west-2",
+      "tfStateKey": "lambda-go-gin-prod-f99abf7a37c5c8b9e8b9.tfstate"
     }
   ]
 }

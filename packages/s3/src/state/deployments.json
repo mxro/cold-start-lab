@@ -1,1 +1,17 @@
-[]
+[
+  {
+    "name": "prod",
+    "terraform": {
+      "bucket_arn": {
+        "sensitive": false,
+        "type": "string",
+        "value": "arn:aws:s3:::cold-start-lab-test-bucket"
+      },
+      "bucket_name": {
+        "sensitive": false,
+        "type": "string",
+        "value": "cold-start-lab-test-bucket"
+      }
+    }
+  }
+]

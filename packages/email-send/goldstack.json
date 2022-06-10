@@ -12,7 +12,8 @@
         "hostedZoneDomain": "cold-start-lab.mxro.de"
       },
       "awsUser": "awsUser",
-      "awsRegion": "us-west-2"
+      "awsRegion": "us-west-2",
+      "tfStateKey": "email-send-prod-979251a1cb5ac3e5ca77.tfstate"
     }
   ]
 }

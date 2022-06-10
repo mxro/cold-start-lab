@@ -10,5 +10,15 @@
     "outDir": "dist",
     "baseUrl": "."
   },
-  "references": []
+  "references": [
+    {
+      "path": "../dynamodb"
+    },
+    {
+      "path": "../email-send"
+    },
+    {
+      "path": "../s3"
+    }
+  ]
 }

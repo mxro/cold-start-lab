@@ -39,60 +39,6 @@ describe('DynamoDB Table', () => {
     assert(table3);
   });
 
-  it('Should be able to write and read an entity with native toolbox methods', async () => {
-    const table = new Table({
-      name: await getTableName(),
-      partitionKey: 'pk',
-      sortKey: 'sk',
-      DocumentClient: new DynamoDB.DocumentClient({ service: await connect() }),
-    });
-
-    const e = new Entity({
-      name: 'User',
-      attributes: {
-        pk: { partitionKey: true },
-        sk: { hidden: true, sortKey: true },
-        name: { type: 'string', required: true },
-        emailVerified: { type: 'boolean', required: true },
-      },
-      table,
-    } as const);
-
-    await e.put({
-      pk: 'joe@email.com',
-      sk: 'admin',
-      name: 'Joe',
-      emailVerified: true,
-    });
-
-    const { Item: user } = await e.get<User, UserKey>(
-      { pk: 'joe@email.com', sk: 'admin' },
-      { attributes: ['name', 'pk'] }
-    );
-
-    expect(user.name).toEqual('Joe');
-  });
-
-  it('Should be able to write and read an entity with entities', async () => {
-    const table = await connectTable();
-    const Users = UserEntity(table);
-
-    await Users.put({
-      pk: 'joe@email.com',
-      sk: 'admin',
-      name: 'Joe',
-      emailVerified: true,
-    });
-
-    const { Item: user } = await Users.get<User, UserKey>(
-      { pk: 'joe@email.com', sk: 'admin' },
-      { attributes: ['name', 'pk'] }
-    );
-
-    expect(user.name).toEqual('Joe');
-    expect(user.pk).toEqual('joe@email.com');
-  });
-
   afterAll(async () => {
     await stopLocalDynamoDB();
   });

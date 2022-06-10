@@ -13,7 +13,8 @@
         "websiteDomain": "cold-start-lab.mxro.de"
       },
       "awsUser": "awsUser",
-      "awsRegion": "us-west-2"
+      "awsRegion": "us-west-2",
+      "tfStateKey": "app-nextjs-bootstrap-prod-d81eb1b58aef9b49df59.tfstate"
     }
   ]
 }
