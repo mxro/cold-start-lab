@@ -30,25 +30,10 @@
   "include": [],
   "references": [
     {
-      "path": "packages/app-nextjs-bootstrap"
+      "path": "../templates-lib/packages/utils-nodemonx"
     },
     {
-      "path": "packages/dynamodb"
-    },
-    {
-      "path": "packages/email-send"
-    },
-    {
-      "path": "packages/lambda-express"
-    },
-    {
-      "path": "packages/lambda-go-gin"
-    },
-    {
-      "path": "packages/s3"
-    },
-    {
-      "path": "packages/serverless-api"
+      "path": "../templates-lib/packages/utils-typescript-references"
     }
   ]
 }

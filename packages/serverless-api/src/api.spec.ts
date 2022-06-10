@@ -31,10 +31,9 @@ describe('Should create API', () => {
   });
 
   test('Should receive response and support parameters', async () => {
-    const res = await fetch(`http://localhost:${port}/dynamodb`);
+    const res = await fetch(`http://localhost:${port}/echo?message=abc`);
     const response = await res.json();
-    expect(response.message).toContain('Dummy User');
-    expect(response.timings).toBeDefined();
+    expect(response.message).toContain('abc');
   });
 
   afterAll(async () => {

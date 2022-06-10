@@ -2,7 +2,7 @@
   "$schema": "./schemas/package.schema.json",
   "name": "s3",
   "template": "s3",
-  "templateVersion": "0.1.80",
+  "templateVersion": "0.1.81",
   "configuration": {},
   "deployments": [
     {
@@ -11,8 +11,7 @@
         "bucketName": "cold-start-lab-bucket"
       },
       "awsUser": "awsUser",
-      "awsRegion": "us-west-2",
-      "tfStateKey": "s3-prod-f2c16df5d980930a62b0.tfstate"
+      "awsRegion": "us-west-2"
     }
   ]
 }

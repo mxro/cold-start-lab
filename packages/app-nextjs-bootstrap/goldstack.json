@@ -2,7 +2,7 @@
   "$schema": "./schemas/package.schema.json",
   "name": "app-nextjs-bootstrap",
   "template": "app-nextjs-bootstrap",
-  "templateVersion": "0.1.40",
+  "templateVersion": "0.1.41",
   "configuration": {},
   "deployments": [
     {
