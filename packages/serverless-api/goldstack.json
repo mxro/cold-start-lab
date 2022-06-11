@@ -17,6 +17,10 @@
             "function_name": "dynamodb",
             "route": "ANY /dynamodb"
           },
+          "ANY /email": {
+            "function_name": "email",
+            "route": "ANY /email"
+          },
           "ANY /hello": {
             "function_name": "hello",
             "route": "ANY /hello"
