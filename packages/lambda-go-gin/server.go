@@ -4,6 +4,8 @@ import (
 	"net/http"
 	"os"
 
+	"api/handlers"
+
 	"github.com/gin-contrib/cors"
 	"github.com/gin-gonic/gin"
 )
@@ -17,6 +19,7 @@ func CreateServer() *gin.Engine {
 		config.AllowOrigins = []string{corsEnv}
 		r.Use(cors.New(config))
 	}
+	r.GET("/hello", handlers.HelloHandler)
 	r.GET("/", func(c *gin.Context) {
 		c.String(http.StatusOK, "success")
 	})

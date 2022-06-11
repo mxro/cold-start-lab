@@ -19,6 +19,5 @@ func init() {
 }
 
 func Handler(ctx context.Context, req events.APIGatewayProxyRequest) (events.APIGatewayProxyResponse, error) {
-	log.Printf("Request received:\n%+v", req)
 	return ginLambda.ProxyWithContext(ctx, req)
 }
