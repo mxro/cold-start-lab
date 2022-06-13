@@ -20,6 +20,7 @@ func CreateServer() *gin.Engine {
 		r.Use(cors.New(config))
 	}
 	r.GET("/hello", handlers.HelloHandler)
+	r.GET("/dynamodb", handlers.DynamoDBHandler)
 	r.GET("/", func(c *gin.Context) {
 		c.String(http.StatusOK, "success")
 	})
