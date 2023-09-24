@@ -1,1 +1,17 @@
-[]
+[
+  {
+    "name": "prod",
+    "terraform": {
+      "edge_function_name": {
+        "sensitive": false,
+        "type": "string",
+        "value": "cold-start-lab-mxro-de-edge"
+      },
+      "website_cdn_root_id": {
+        "sensitive": false,
+        "type": "string",
+        "value": "EDI1Y0OPSA98X"
+      }
+    }
+  }
+]
